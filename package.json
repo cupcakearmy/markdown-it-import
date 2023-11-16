@@ -1,6 +1,6 @@
 {
   "name": "@nicco.io/markdown-it-import",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0",
   "description": "Markdown-it plugin which adds the ability to include markdown fragment files.",
   "keywords": [
     "markdown-it-plugin",
