@@ -2,16 +2,18 @@ import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 
-const defaultOptions = {
-  matcher: /@import\((?<file>.+)\)(\s*?\[(?<range>\d+-\d+)\])?/g,
-  root: process.cwd(),
+function defaultOptions() {
+  return {
+    matcher: /@import\((?<file>.+)\)(\s*?\[(?<range>\d+-\d+)\])?/g,
+    root: process.cwd(),
+  }
 }
 
-export type Options = Partial<typeof defaultOptions>
+export type Options = Partial<ReturnType<typeof defaultOptions>>
 
 export function importPlugin(md: any, options: Options = {}) {
   // Options
-  const o = Object.assign(defaultOptions, options)
+  const o = Object.assign(defaultOptions(), options)
 
   // Parser
   function parse(code: string, alreadyVisited: string[] = []) {
