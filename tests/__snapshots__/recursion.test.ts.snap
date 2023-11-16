@@ -9,7 +9,6 @@ exports[`base import different files 1`] = `
 <pre><code class="language-ts">export function sum(a: number, b: number): number {
   return a + b
 }
-
 </code></pre>
 "
 `;

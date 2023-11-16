@@ -34,7 +34,6 @@ exports[`base single import 1`] = `
 <pre><code class="language-ts">export function sum(a: number, b: number): number {
   return a + b
 }
-
 </code></pre>
 "
 `;
@@ -44,7 +43,6 @@ exports[`base multiple imports 1`] = `
 <pre><code class="language-ts">export function sum(a: number, b: number): number {
   return a + b
 }
-
 </code></pre>
 <blockquote>
 <p>This is some amazing quote</p>

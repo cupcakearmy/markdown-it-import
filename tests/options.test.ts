@@ -30,4 +30,8 @@ describe('options', () => {
       expect(() => render('matcher-a.md', { matcher })).toThrow('Regexp must expose a named group "file"')
     })
   })
+
+  test('do not trim', async () => {
+    expect(await render('whole.md', { trim: false })).toMatchSnapshot()
+  })
 })

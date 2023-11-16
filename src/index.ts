@@ -6,6 +6,7 @@ function defaultOptions() {
   return {
     matcher: /@import\((?<file>.+)\)(\s*?\[(?<range>\d+-\d+)\])?/g,
     root: process.cwd(),
+    trim: true,
   }
 }
 
@@ -40,6 +41,9 @@ export function importPlugin(md: any, options: Options = {}) {
       const exists = fs.existsSync(filename)
       if (!exists) throw new Error(`cannot locate file "${filename}"`)
       let contents = fs.readFileSync(filename, 'utf-8')
+      if (o.trim) {
+        contents = contents.trim()
+      }
 
       // Apply line range
       if (range) {

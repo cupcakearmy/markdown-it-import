@@ -38,3 +38,13 @@ exports[`options empty options 1`] = `
 </table>
 "
 `;
+
+exports[`options do not trim 1`] = `
+"<p>Here is a typescript snippet</p>
+<pre><code class="language-ts">export function sum(a: number, b: number): number {
+  return a + b
+}
+
+</code></pre>
+"
+`;
