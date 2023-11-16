@@ -1,0 +1,47 @@
+{
+  "name": "@nicco.io/markdown-it-import",
+  "version": "1.0.0-rc.0",
+  "description": "Markdown-it plugin which adds the ability to include markdown fragment files.",
+  "keywords": [
+    "markdown-it-plugin",
+    "markdown-it",
+    "markdown",
+    "include"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cupcakearmy/markdown-it-import"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "cupcakearmy",
+    "email": "hi@nicco.io",
+    "url": "https://github.com/cupcakearmy"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && bun build ./src/index.ts --outfile dist/index.js --target node"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
