@@ -30,12 +30,12 @@
     "./dist"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && tsc && bun build ./src/index.ts --outfile dist/index.js --target node"
+    "build": "bun test && rm -rf ./dist && tsc && bun build ./src/index.ts --outfile dist/index.js --target node",
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
+    "bun-types": "latest",
+    "markdown-it": "^13.0.2",
     "typescript": "^5.0.0"
   },
   "engines": {

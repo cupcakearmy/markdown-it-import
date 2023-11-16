@@ -1,0 +1,1 @@
+$tests/fixtures/quote.txt$

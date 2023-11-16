@@ -1,0 +1,40 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`options matcher custom matcher 1`] = `
+"<p>This is some amazing quote</p>
+"
+`;
+
+exports[`options matcher custom matcher 2`] = `
+"<p>This is some amazing quote</p>
+"
+`;
+
+exports[`options empty options 1`] = `
+"<h1>Some title</h1>
+<ul>
+<li>Some</li>
+<li>List</li>
+<li>Three</li>
+</ul>
+<blockquote>
+<p>Some note</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Column A</th>
+<th>Column B</th>
+<th>Column C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Some</td>
+<td><code>stuff</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+"
+`;

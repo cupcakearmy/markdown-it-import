@@ -1,0 +1,15 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base import different files 1`] = `
+"<h1>I am gonna import different stuff</h1>
+<h2>Here is a typescript snippet</h2>
+<blockquote>
+<p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.</p>
+</blockquote>
+<pre><code class="language-ts">export function sum(a: number, b: number): number {
+  return a + b
+}
+
+</code></pre>
+"
+`;
