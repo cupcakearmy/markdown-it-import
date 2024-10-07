@@ -1,5 +1,5 @@
-import { readFile } from 'fs/promises'
-import { join } from 'path'
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 import MarkdownIt from 'markdown-it'
 import { Options, importPlugin } from '../src/index.ts'
 

@@ -34,9 +34,9 @@
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "markdown-it": "^13.0.2",
-    "typescript": "^5.0.0"
+    "@types/bun": "^1.1.10",
+    "markdown-it": "^14.1.0",
+    "typescript": "^5.6.2"
   },
   "engines": {
     "node": ">=14"
